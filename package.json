@@ -1,7 +1,7 @@
 {
   "name": "generator-nfs-boilerplate",
   "version": "0.1.0",
-  "description": "",
+  "description": "NodeFrame Solution's Yeoman boilerplate generator",
   "files": [
     "app",
     "router"
