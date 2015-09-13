@@ -1,0 +1,90 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/iojs', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@2.13.0
+3 info using node@v2.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec { raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/thakerng/Desktop/tech/boilerplate',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package.tgz not in flight; packing
+9 verbose tar pack [ '/Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package.tgz',
+9 verbose tar pack   '/Users/thakerng/Desktop/tech/boilerplate' ]
+10 verbose tarball /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package.tgz
+11 verbose folder /Users/thakerng/Desktop/tech/boilerplate
+12 info prepublish generator-nfs-boilerplate@0.1.0
+13 verbose addLocalTarball adding from inside cache /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package.tgz
+14 silly cache afterAdd generator-nfs-boilerplate@0.1.0
+15 verbose afterAdd /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package/package.json not in flight; writing
+16 verbose afterAdd /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package/package.json written
+17 silly publish { name: 'generator-nfs-boilerplate',
+17 silly publish   version: '0.1.0',
+17 silly publish   description: 'NodeFrame Solution\'s Yeoman boilerplate generator',
+17 silly publish   files: [ 'app', 'router' ],
+17 silly publish   keywords: [ 'yeoman-generator' ],
+17 silly publish   dependencies:
+17 silly publish    { chalk: '^1.1.1',
+17 silly publish      lodash: '^3.10.1',
+17 silly publish      'yeoman-generator': '^0.20.2',
+17 silly publish      yosay: '^1.0.5' },
+17 silly publish   readme: '# Nodeframe Solution \'s Boilerplate generator\n\n## Getting Started\n\n* Install: `npm install -g generator-nfs-boilerplate`\n* Run: `yo nfs-boilerplate`\n\n## Release History\n2015-09-14 v0.1.0 Initial release',
+17 silly publish   readmeFilename: 'README.md',
+17 silly publish   gitHead: 'abbfc82e91c4ff8da9225a9a1f2dbb90fbe7baa4',
+17 silly publish   _id: 'generator-nfs-boilerplate@0.1.0',
+17 silly publish   scripts: {},
+17 silly publish   _shasum: 'e2671463cd84f1cdb5ef3d4a36ef4a96515a694d',
+17 silly publish   _from: '.' }
+18 verbose getPublishConfig undefined
+19 silly mapToRegistry name generator-nfs-boilerplate
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/generator-nfs-boilerplate
+23 verbose publish registryBase https://registry.npmjs.org/
+24 silly publish uploading /Users/thakerng/.npm/generator-nfs-boilerplate/0.1.0/package.tgz
+25 verbose request uri https://registry.npmjs.org/generator-nfs-boilerplate
+26 verbose request sending authorization for write operation
+27 info attempt registry request try #1 at 01:49:23
+28 verbose request using bearer token for auth
+29 verbose request id 7b12c335b3b0d22f
+30 http request PUT https://registry.npmjs.org/generator-nfs-boilerplate
+31 http 403 https://registry.npmjs.org/generator-nfs-boilerplate
+32 verbose headers { 'content-type': 'application/json',
+32 verbose headers   'cache-control': 'max-age=60',
+32 verbose headers   'content-length': '95',
+32 verbose headers   'accept-ranges': 'bytes',
+32 verbose headers   date: 'Sun, 13 Sep 2015 18:49:26 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-ams4135-AMS',
+32 verbose headers   'x-cache': 'MISS',
+32 verbose headers   'x-cache-hits': '0',
+32 verbose headers   'x-timer': 'S1442170164.847780,VS0,VE1352' }
+33 verbose request invalidating /Users/thakerng/.npm/registry.npmjs.org/generator-nfs-boilerplate on PUT
+34 error publish Failed PUT 403
+35 verbose stack Error: "You cannot publish over the previously published version 0.1.0." : generator-nfs-boilerplate
+35 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:247:14)
+35 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+35 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:197:22)
+35 verbose stack     at emitTwo (events.js:87:13)
+35 verbose stack     at Request.emit (events.js:172:7)
+35 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1050:14)
+35 verbose stack     at emitOne (events.js:82:20)
+35 verbose stack     at Request.emit (events.js:169:7)
+35 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:996:12)
+35 verbose stack     at emitNone (events.js:72:20)
+36 verbose statusCode 403
+37 verbose pkgid generator-nfs-boilerplate
+38 verbose cwd /Users/thakerng/Desktop/tech/boilerplate
+39 error Darwin 14.3.0
+40 error argv "/usr/local/bin/iojs" "/usr/local/bin/npm" "publish"
+41 error node v2.4.0
+42 error npm  v2.13.0
+43 error code E403
+44 error "You cannot publish over the previously published version 0.1.0." : generator-nfs-boilerplate
+45 error If you need help, you may report this error at:
+45 error     <https://github.com/npm/npm/issues>
+46 verbose exit [ 1, true ]
